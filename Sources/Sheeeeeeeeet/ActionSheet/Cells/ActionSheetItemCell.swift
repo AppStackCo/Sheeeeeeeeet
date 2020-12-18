@@ -93,6 +93,7 @@ open class ActionSheetItemCell: UITableViewCell {
         textLabel?.text = item.title
         textLabel?.textAlignment = itemTextAlignment
         textLabel?.textColor = item.isEnabled ? titleColor : disabledTitleColor
+        textLabel?.numberOfLines = 0
         detailTextLabel?.font = subtitleFont
         detailTextLabel?.text = item.subtitle
         detailTextLabel?.textColor = item.isEnabled ? subtitleColor : disabledSubtitleColor
